@@ -44,5 +44,18 @@ namespace WindowsFormsApp2
                 dataQueue.Dequeue();
             }
         }
+
+        private void enqueTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void updateQueue() {
+
+            foreach (int data in dataQueue) {
+                queueContentsTxtBox.AppendText(Convert.ToString(data) + ",");
+            }
+
+        }
     }
 }

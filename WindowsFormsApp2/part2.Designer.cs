@@ -40,7 +40,7 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.queueContentsTxtBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // enqueTextBox
@@ -49,6 +49,7 @@
             this.enqueTextBox.Name = "enqueTextBox";
             this.enqueTextBox.Size = new System.Drawing.Size(100, 23);
             this.enqueTextBox.TabIndex = 0;
+            this.enqueTextBox.TextChanged += new System.EventHandler(this.enqueTextBox_TextChanged);
             // 
             // enqueButton
             // 
@@ -144,20 +145,20 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Queue Contents";
             // 
-            // textBox6
+            // queueContentsTxtBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(12, 261);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(183, 173);
-            this.textBox6.TabIndex = 0;
+            this.queueContentsTxtBox.Location = new System.Drawing.Point(12, 261);
+            this.queueContentsTxtBox.Multiline = true;
+            this.queueContentsTxtBox.Name = "queueContentsTxtBox";
+            this.queueContentsTxtBox.Size = new System.Drawing.Size(183, 173);
+            this.queueContentsTxtBox.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(236, 460);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.queueContentsTxtBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
@@ -192,7 +193,7 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox queueContentsTxtBox;
     }
 }
 
