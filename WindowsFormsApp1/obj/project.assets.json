@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\mech421\\Lab1\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
-      "projectName": "WindowsFormsApp1",
-      "projectPath": "D:\\mech421\\Lab1\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
+      "projectUniqueName": "D:\\mech421\\Lab1\\WindowsFormsApp1\\lab1Part1.csproj",
+      "projectName": "lab1Part1",
+      "projectPath": "D:\\mech421\\Lab1\\WindowsFormsApp1\\lab1Part1.csproj",
       "packagesPath": "C:\\Users\\brucecui\\.nuget\\packages\\",
       "outputPath": "D:\\mech421\\Lab1\\WindowsFormsApp1\\obj\\",
       "projectStyle": "PackageReference",
