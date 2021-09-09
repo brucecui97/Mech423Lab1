@@ -33,5 +33,16 @@ namespace WindowsFormsApp2
         {
             dataQueue.Enqueue(Convert.ToInt32(enqueTextBox.Text));
         }
+
+        private void dequeButton_Click(object sender, EventArgs e)
+        {
+            if (dataQueue.Count == 0)
+            {
+                MessageBox.Show("error. You cannot dequeu a queue of size 0");
+            }
+            else {
+                dataQueue.Dequeue();
+            }
+        }
     }
 }

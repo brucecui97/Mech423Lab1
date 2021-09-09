@@ -33,10 +33,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.test = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.DequeAndAverage = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -88,14 +88,15 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Average: ";
             // 
-            // button2
+            // test
             // 
-            this.button2.Location = new System.Drawing.Point(32, 57);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Dequeue";
-            this.button2.UseVisualStyleBackColor = true;
+            this.test.Location = new System.Drawing.Point(32, 57);
+            this.test.Name = "test";
+            this.test.Size = new System.Drawing.Size(75, 23);
+            this.test.TabIndex = 1;
+            this.test.Text = "Dequeue";
+            this.test.UseVisualStyleBackColor = true;
+            this.test.Click += new System.EventHandler(this.dequeButton_Click);
             // 
             // textBox2
             // 
@@ -111,14 +112,14 @@
             this.textBox3.Size = new System.Drawing.Size(100, 23);
             this.textBox3.TabIndex = 0;
             // 
-            // button4
+            // DequeAndAverage
             // 
-            this.button4.Location = new System.Drawing.Point(20, 149);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(199, 23);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.DequeAndAverage.Location = new System.Drawing.Point(20, 149);
+            this.DequeAndAverage.Name = "DequeAndAverage";
+            this.DequeAndAverage.Size = new System.Drawing.Size(199, 23);
+            this.DequeAndAverage.TabIndex = 1;
+            this.DequeAndAverage.Text = "Deque and Average First N Data Points";
+            this.DequeAndAverage.UseVisualStyleBackColor = true;
             // 
             // textBox4
             // 
@@ -160,10 +161,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.DequeAndAverage);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.test);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -184,10 +185,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button test;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button DequeAndAverage;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label3;
