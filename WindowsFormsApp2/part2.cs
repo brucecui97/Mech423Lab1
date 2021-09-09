@@ -13,10 +13,18 @@ namespace WindowsFormsApp2
     public partial class Form1 : Form
     {
         Queue<Int32> dataQueue = new Queue<Int32>();
-
+        Timer updateQueueDisplayTimer;
         public Form1()
         {
             InitializeComponent();
+            updateQueueDisplayTimer = new Timer();
+            updateQueueDisplayTimer.Interval = 100; //ms
+            updateQueueDisplayTimer.Tick += UpdateQueueDisplayTimer_Tick;
+            updateQueueDisplayTimer.Start();
+        }
+        private void UpdateQueueDisplayTimer_Tick(object sender, EventArgs e)
+        {
+            updateQueue();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -47,11 +55,11 @@ namespace WindowsFormsApp2
 
         private void enqueTextBox_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void updateQueue() {
-
+            queueContentsTxtBox.Clear();
             foreach (int data in dataQueue) {
                 queueContentsTxtBox.AppendText(Convert.ToString(data) + ",");
             }
