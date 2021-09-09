@@ -37,8 +37,8 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.DequeAndAverage = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.nTxtBox = new System.Windows.Forms.TextBox();
+            this.averageTxtBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.queueContentsTxtBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -121,20 +121,21 @@
             this.DequeAndAverage.TabIndex = 1;
             this.DequeAndAverage.Text = "Deque and Average First N Data Points";
             this.DequeAndAverage.UseVisualStyleBackColor = true;
+            this.DequeAndAverage.Click += new System.EventHandler(this.DequeAndAverage_Click);
             // 
-            // textBox4
+            // nTxtBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(32, 188);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(54, 23);
-            this.textBox4.TabIndex = 0;
+            this.nTxtBox.Location = new System.Drawing.Point(32, 188);
+            this.nTxtBox.Name = "nTxtBox";
+            this.nTxtBox.Size = new System.Drawing.Size(54, 23);
+            this.nTxtBox.TabIndex = 0;
             // 
-            // textBox5
+            // averageTxtBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(154, 191);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(44, 23);
-            this.textBox5.TabIndex = 0;
+            this.averageTxtBox.Location = new System.Drawing.Point(154, 191);
+            this.averageTxtBox.Name = "averageTxtBox";
+            this.averageTxtBox.Size = new System.Drawing.Size(44, 23);
+            this.averageTxtBox.TabIndex = 0;
             // 
             // label3
             // 
@@ -160,8 +161,8 @@
             this.ClientSize = new System.Drawing.Size(236, 460);
             this.Controls.Add(this.queueContentsTxtBox);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.averageTxtBox);
+            this.Controls.Add(this.nTxtBox);
             this.Controls.Add(this.DequeAndAverage);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -190,8 +191,8 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button DequeAndAverage;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox nTxtBox;
+        private System.Windows.Forms.TextBox averageTxtBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox queueContentsTxtBox;
     }

@@ -65,5 +65,30 @@ namespace WindowsFormsApp2
             }
 
         }
+
+        private void DequeAndAverage_Click(object sender, EventArgs e)
+        {
+            int N = -1;
+
+            if (!int.TryParse(nTxtBox.Text, out N))
+            {
+                MessageBox.Show("the N value you entered is not an int");
+            }
+            else if (N <= 0)
+            {
+                MessageBox.Show("the N value you entered is less than or equal 0");
+            }
+
+            else if (dataQueue.Count<N) {
+                MessageBox.Show("the N value you entered is greater than size of the queue");
+            }
+            else {
+                List<int> poppedValues = new List<int>();
+                for (int i = 0; i < N; i++) {
+                    poppedValues.Add(dataQueue.Dequeue());
+                }
+                averageTxtBox.Text = Convert.ToString(poppedValues.Average());
+            }
+        }
     }
 }
