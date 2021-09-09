@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,7 @@ namespace WindowsFormsApp2
 {
     public partial class Form1 : Form
     {
-        Queue<Int32> dataQueue = new Queue<Int32>();
+        ConcurrentQueue<Int32> dataQueue = new ConcurrentQueue<Int32>();
         Timer updateQueueDisplayTimer;
         public Form1()
         {
@@ -49,7 +50,12 @@ namespace WindowsFormsApp2
                 MessageBox.Show("error. You cannot dequeu a queue of size 0");
             }
             else {
-                dataQueue.Dequeue();
+
+
+                if (!dataQueue.TryDequeue(out _)) {
+                    MessageBox.Show("did not deque succesfully due to concurrency issue");
+               
+                }
             }
         }
 
@@ -85,10 +91,21 @@ namespace WindowsFormsApp2
             else {
                 List<int> poppedValues = new List<int>();
                 for (int i = 0; i < N; i++) {
-                    poppedValues.Add(dataQueue.Dequeue());
+                    int poppedValue;
+
+                    while (!dataQueue.TryDequeue(out poppedValue)) { 
+                    
+                    }
+
+                    poppedValues.Add(poppedValue);
                 }
                 averageTxtBox.Text = Convert.ToString(poppedValues.Average());
             }
+        }
+
+        private void queueContentsTxtBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

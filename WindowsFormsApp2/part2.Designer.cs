@@ -153,6 +153,7 @@
             this.queueContentsTxtBox.Name = "queueContentsTxtBox";
             this.queueContentsTxtBox.Size = new System.Drawing.Size(183, 173);
             this.queueContentsTxtBox.TabIndex = 0;
+            this.queueContentsTxtBox.TextChanged += new System.EventHandler(this.queueContentsTxtBox_TextChanged);
             // 
             // Form1
             // 
