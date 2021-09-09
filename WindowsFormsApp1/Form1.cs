@@ -48,5 +48,16 @@ namespace Lab1
             txtYPosition.Text = e.Y.ToString("0000");
 
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void doMouseClickEvent(object sender, MouseEventArgs e)
+        {
+            string xyPos = "(" + e.X.ToString("0000") + "," + e.Y.ToString("0000") + ")\n";
+            recordedClicksTxtBox.AppendText(xyPos);
+        }
     }
 }

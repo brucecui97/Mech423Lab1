@@ -33,6 +33,8 @@
             this.txtXPosition = new System.Windows.Forms.TextBox();
             this.txtYPosition = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.recordedClicksTxtBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,13 +86,34 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.doMouseClickEvent);
             this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.doPictureMouseMoveEvent);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 72);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(88, 15);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "RecordedClicks";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // recordedClicksTxtBox
+            // 
+            this.recordedClicksTxtBox.Location = new System.Drawing.Point(12, 90);
+            this.recordedClicksTxtBox.Multiline = true;
+            this.recordedClicksTxtBox.Name = "recordedClicksTxtBox";
+            this.recordedClicksTxtBox.Size = new System.Drawing.Size(128, 172);
+            this.recordedClicksTxtBox.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(559, 274);
+            this.Controls.Add(this.recordedClicksTxtBox);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtYPosition);
             this.Controls.Add(this.txtXPosition);
@@ -113,6 +136,8 @@
         private System.Windows.Forms.TextBox txtXPosition;
         private System.Windows.Forms.TextBox txtYPosition;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox recordedClicksTxtBox;
     }
 }
 
