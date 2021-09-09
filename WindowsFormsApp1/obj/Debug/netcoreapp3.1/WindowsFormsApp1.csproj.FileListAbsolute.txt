@@ -5,7 +5,6 @@ D:\mech421\Lab1\WindowsFormsApp1\bin\Debug\netcoreapp3.1\WindowsFormsApp1.runtim
 D:\mech421\Lab1\WindowsFormsApp1\bin\Debug\netcoreapp3.1\WindowsFormsApp1.dll
 D:\mech421\Lab1\WindowsFormsApp1\bin\Debug\netcoreapp3.1\WindowsFormsApp1.pdb
 D:\mech421\Lab1\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.csprojAssemblyReference.cache
-D:\mech421\Lab1\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.Form1.resources
 D:\mech421\Lab1\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.csproj.GenerateResource.cache
 D:\mech421\Lab1\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.AssemblyInfoInputs.cache
 D:\mech421\Lab1\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.AssemblyInfo.cs
@@ -13,3 +12,4 @@ D:\mech421\Lab1\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.csproj
 D:\mech421\Lab1\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.dll
 D:\mech421\Lab1\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.pdb
 D:\mech421\Lab1\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.genruntimeconfig.cache
+D:\mech421\Lab1\WindowsFormsApp1\obj\Debug\netcoreapp3.1\Lab1.Form1.resources
