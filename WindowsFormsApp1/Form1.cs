@@ -31,5 +31,22 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void doPictureMouseMoveEvent(object sender, MouseEventArgs e)
+        {
+            txtXPosition.Text = e.X.ToString("0000");
+            txtYPosition.Text = e.Y.ToString("0000");
+
+        }
     }
 }
