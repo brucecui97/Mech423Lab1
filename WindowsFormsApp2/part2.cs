@@ -49,7 +49,8 @@ namespace WindowsFormsApp2
                 MessageBox.Show("error. You cannot dequeu a queue of size 0");
             }
             else {
-                dataQueue.Dequeue();
+                dequeTxtBox.Text= dataQueue.Dequeue().ToString();
+                
             }
         }
 
@@ -63,6 +64,7 @@ namespace WindowsFormsApp2
             foreach (int data in dataQueue) {
                 queueContentsTxtBox.AppendText(Convert.ToString(data) + ",");
             }
+            itemsInQueueTxtBox.Text = dataQueue.Count.ToString();
 
         }
 
