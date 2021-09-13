@@ -49,12 +49,15 @@ namespace WindowsFormsApp2
             {
                 MessageBox.Show("error. You cannot dequeu a queue of size 0");
             }
+
             else {
-
-
-                if (!dataQueue.TryDequeue(out _)) {
+                int dequedContent;
+                if (!dataQueue.TryDequeue(out dequedContent))
+                {
                     MessageBox.Show("did not deque succesfully due to concurrency issue");
-               
+                }
+                else {
+                    dequeTxtBox.Text = dequedContent.ToString();
                 }
             }
         }
@@ -69,7 +72,7 @@ namespace WindowsFormsApp2
             foreach (int data in dataQueue) {
                 queueContentsTxtBox.AppendText(Convert.ToString(data) + ",");
             }
-
+            itemsInQueueTxtBox.Text = dataQueue.Count.ToString();
         }
 
         private void DequeAndAverage_Click(object sender, EventArgs e)
